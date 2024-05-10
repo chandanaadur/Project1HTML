@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 3px;
+        background-color: lightblue;
+    }
+
+    div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #000;
+    }
+    div.footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: blue;
+        text-align: left;
+    }
+    div.realtive {
+        position: relative;
+        left: 30px;
+        border: 3px solid #000;
+    }     
+      div.parent {
+        position: relative;
+        width: 300px;
+        height: 200;
+        background-color: lightblue;
+      }
+    div.child {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    div.modal {
+        text-align: center;
+        padding: 0
+    }
+    div.first {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+    }
+  
+</style>
+</head>
+<body>
+
+
+    <h1>sticky property</h1>
+    <div class="sticky"> This is example for sticky</div>
+    <p style="font-size: 30px; padding-bottom: 100px;">CSS stands for cascading style sheets, CSS describes how HTML elements are to be displayed on screen, paper, or in other media>
+    </div>
+
+    <h1>fixed property</h1>
+    <div class="fixed">
+       This is a example for fixed
+    </div>
+
+    <h1>Footer</h1>
+    <div class="footer">
+    <p>This is example for footer</p>
+    </div>
+
+    <h1>Realitive property</h1>
+    <div class="realtive">
+       This is a example for realtive
+    </div>
+     
+    <div class="parent">
+      <div class="child"></div>
+       This is a example for parent container
+    </div>
+ 
+    <div class="modal">
+        This is a example for popup modal
+    </div>
+
+
+</body>
+</html>
